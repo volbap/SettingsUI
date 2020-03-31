@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwitchCell" rowHeight="44" id="bKn-33-rSF" customClass="SwitchCell" customModule="SettingsUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bKn-33-rSF" id="seT-vQ-8eU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUH-HF-jLH">
+                        <rect key="frame" x="16" y="11" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQ0-fa-k7f">
+                        <rect key="frame" x="310" y="6.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchValue:" destination="bKn-33-rSF" eventType="valueChanged" id="oiA-M7-drG"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AUH-HF-jLH" firstAttribute="leading" secondItem="seT-vQ-8eU" secondAttribute="leading" constant="16" id="248-YV-6i6"/>
+                    <constraint firstItem="AUH-HF-jLH" firstAttribute="top" secondItem="seT-vQ-8eU" secondAttribute="top" constant="11" id="O3m-CO-Pnf"/>
+                    <constraint firstItem="VQ0-fa-k7f" firstAttribute="centerY" secondItem="seT-vQ-8eU" secondAttribute="centerY" id="QVP-Cl-Gar"/>
+                    <constraint firstAttribute="trailing" secondItem="VQ0-fa-k7f" secondAttribute="trailing" constant="16" id="Sij-z0-COF"/>
+                    <constraint firstAttribute="bottom" secondItem="AUH-HF-jLH" secondAttribute="bottom" constant="12" id="YX9-eW-HmJ"/>
+                    <constraint firstItem="VQ0-fa-k7f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AUH-HF-jLH" secondAttribute="trailing" constant="16" id="dmF-jh-c0R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switcher" destination="VQ0-fa-k7f" id="AAz-at-O6n"/>
+                <outlet property="titleLabel" destination="AUH-HF-jLH" id="dIZ-tb-aed"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="-109"/>
+        </tableViewCell>
+    </objects>
+</document>
