@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "c8644ea1610f0ba90b568d73b5a40579d2390a83",
+  "iOS" : [
+    {
+      "name" : "SettingsUI",
+      "hash" : "f658f290a43dc7a072ca07a6ece3a89c174a792b99e397b6e17ac10773dd9bcf",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

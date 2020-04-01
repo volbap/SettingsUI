@@ -1,0 +1,11 @@
+framework module SettingsUI {
+  umbrella header "SettingsUI.h"
+
+  export *
+  module * { export * }
+}
+
+module SettingsUI.Swift {
+    header "SettingsUI-Swift.h"
+    requires objc
+}
