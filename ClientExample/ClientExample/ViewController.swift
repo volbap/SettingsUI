@@ -11,7 +11,7 @@ import SettingsUI
 
 class ViewController: UIViewController {
     
-    var settings = Settings(flag1: false, flag2: true, baseURL: "https://www.google.com/", min: 0, max: 1, other: Settings.Other(flag3: true, text: "asd", another: Settings.Other.Another(multiplier: 1.815819)))
+    var settings = Settings(flag1: false, flag2: true, baseURL: "https://www.google.com/api/whatever/osd/asdddd/v1/hello_world.md", min: 0, max: 1, other: Settings.Other(flag3: true, text: "asd", another: Settings.Other.Another(multiplier: 1.815819)))
     
     @IBAction private func presentSettings(_ sender: UIButton) {
         let navigation = SettingsUI.makeNavigation(for: settings, onSave: save)
