@@ -8,12 +8,12 @@
   "tvOS" : [
 
   ],
-  "commitish" : "c8644ea1610f0ba90b568d73b5a40579d2390a83",
+  "commitish" : "bbc895f8a7b8603dbe9e78371a19bad53da7ef89",
   "iOS" : [
     {
       "name" : "SettingsUI",
-      "hash" : "f658f290a43dc7a072ca07a6ece3a89c174a792b99e397b6e17ac10773dd9bcf",
-      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+      "hash" : "6a8281f46e31e4ff71f98bf1e1d452e041e0cd203593445f2f9b78ddeb838f8f",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
     }
   ]
 }
